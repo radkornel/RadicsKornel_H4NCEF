@@ -90,6 +90,8 @@ public class Main {
                     } else if(nulladikgol<elsogol && hosszabbítás){
                         lista.get(i).pont+=1;
                         lista.get(i).gól+=nulladikgol;
+                    } else if(nulladikgol<elsogol && hosszabbítás==false){
+                        lista.get(i).gól+=nulladikgol;
                     }
                     van=1;
                     break;
@@ -118,6 +120,8 @@ public class Main {
                     } else if(nulladikgol>elsogol && hosszabbítás){
                         lista.get(i).pont+=1;
                         lista.get(i).gól+=elsogol;
+                    } else if(nulladikgol>elsogol && hosszabbítás==false){
+                        lista.get(i).gól+=elsogol;
                     }
                     van=1;
                     break;
@@ -141,3 +145,4 @@ public class Main {
         }
     }
 }
+
